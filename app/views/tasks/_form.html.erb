@@ -1,0 +1,9 @@
+<div class="task-form">
+  <h3>Create Task</h3>
+  <%= form_for(@task) do |f| %>
+    <%= render 'tasks/error_messages', object: f.object %>
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: "Compose new task..." %>
+    <%= f.submit "Add" %>
+  <% end %>
+</div>

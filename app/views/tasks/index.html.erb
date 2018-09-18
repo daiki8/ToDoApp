@@ -1,5 +1,9 @@
-<h1>All tasks</h1>
-
-<ul>
-  <%= render @tasks %>
-</ul>
+<div class="container">
+  <%= render 'tasks/form' %>
+  <div class="feed-tasks">
+    <h3>All tasks</h3>
+    <ul>
+      <%= render @tasks %>
+    </ul>
+  </div>
+</div>

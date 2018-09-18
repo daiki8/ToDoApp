@@ -14,12 +14,29 @@
  *= require_self
  */
 
-body {
+/*    reset    */
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol {
   margin: 0;
   padding: 0;
+}
+
+/*   layout    */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
   background-color: black;
   color: white;
+}
+
+.task-form {
+  margin-right: 200px;
+}
+
+.task-form input{
+  display: block;
 }
