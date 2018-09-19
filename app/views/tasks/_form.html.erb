@@ -1,5 +1,5 @@
 <div class="task-form">
-  <h3>Create Task</h3>
+  <h3><%= yield(:headline) %></h3>
   <%= form_for(@task) do |f| %>
     <%= render 'tasks/error_messages', object: f.object %>
     <%= f.label :title %>
