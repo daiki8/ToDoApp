@@ -1,9 +1,11 @@
-<div class="container">
-  <%= render 'tasks/form' %>
-  <div class="feed-tasks">
-    <h3>All tasks</h3>
-    <ul>
-      <%= render @tasks %>
-    </ul>
+<div class="main-container">
+  <div class="flex-container">
+    <%= render 'tasks/form' %>
+    <div class="feed-tasks">
+      <h3>All tasks</h3>
+      <ul>
+        <%= render @tasks %>
+      </ul>
+    </div>
   </div>
 </div>
