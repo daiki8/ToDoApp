@@ -1,5 +1,5 @@
 <li>
-  <p><%= task.title %></p>
+  <p style="text-decoration: line-through;"><%= task.title %></p>
   <div class="task-option">
     <%= link_to "undone", task_activation_path(task.id), method: :patch %>
     <%= link_to "edit", edit_task_path(task.id) %>
