@@ -1,7 +1,7 @@
 <li>
   <p><%= task.title %></p>
   <div class="task-option">
-    <% if !task.activated? %>
+    <% if task.activated? %>
       <%= link_to "done", task_activation_path(task.id), method: :patch %>
     <% else %>
       <%= link_to "undone", task_activation_path(task.id), method: :patch %>
