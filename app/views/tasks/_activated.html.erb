@@ -1,0 +1,9 @@
+<li>
+  <p><%= task.title %></p>
+  <div class="task-option">
+    <%= link_to "done", task_activation_path(task.id), method: :patch %>
+    <%= link_to "edit", edit_task_path(task.id) %>
+    <%= link_to "delete", task, method: :delete,
+                                data: { confirm: "You sure?" }  %>
+  </div>
+</li>
